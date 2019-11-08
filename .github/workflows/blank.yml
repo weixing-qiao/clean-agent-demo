@@ -10,7 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: ./auto/run-local-test
+      run: | 
+        ./auto/run-local-test
+        echo "$(python -V)"
     - name: Run a multi-line script
       run: ./auto/run-local-test-with-python2
     - name: Run a one-line script
