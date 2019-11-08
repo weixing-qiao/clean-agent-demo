@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: "Run Test with default python"
-      run: echo "$(dirname $0) $(ls -lart)"
+      run: echo "$(dirname $0) $(ls -lart ../)"
    #   run: "./auto/run-local-test"
 
     - name: "Run Test with python2"
