@@ -1,0 +1,15 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - command: "./auto/run-local-test"
+      label: "Run Test with default python"
+
+    - command: "./auto/run-local-test-with-python2"
+      label: "Run Test with python2"
