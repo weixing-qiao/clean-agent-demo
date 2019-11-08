@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/clean-agent-demo@master
     - name: "Run Test with default python"
       run: echo "$(dirname $0) $(ls -lart ../clean-agent-demo/)"
    #   run: "./auto/run-local-test"
