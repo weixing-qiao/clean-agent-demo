@@ -8,8 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: "./auto/run-local-test"
-      name: "Run Test with default python"
+    - name: "Run Test with default python"
+      run: "./auto/run-local-test"
 
-    - uses: "./auto/run-local-test-with-python2"
-      name: "Run Test with python2"
+    - name: "Run Test with python2"
+      run: "./auto/run-local-test-with-python2"
