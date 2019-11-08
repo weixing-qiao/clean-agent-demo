@@ -13,3 +13,5 @@ jobs:
       run: ./auto/run-local-test
     - name: Run a multi-line script
       run: ./auto/run-local-test-with-python2
+    - name: Run a one-line script
+      run: ./auto/run-local-dev
