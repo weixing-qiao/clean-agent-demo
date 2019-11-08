@@ -13,5 +13,4 @@ jobs:
    #   run: "./auto/run-local-test"
 
     - name: "Run Test with python2"
-      run: ls -lart
-  #    run: "./auto/run-local-test-with-python2"
+      run: "../clean-agent-demo/auto/run-local-test-with-python2"
